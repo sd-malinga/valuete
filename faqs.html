@@ -1,7 +1,22 @@
-<html>
-    <head>
-        
-    <!-- Bootstrap CSS -->
+<%- include("./includes/header.html") %>
+<link rel="stylesheet" href="faqs.css">
+
+	<style type="text/css">
+		.bg-borrower {
+			background: url(/img/borrower_header.png);
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50%;
+			padding-bottom: 50px;
+		}
+		.home-desc{
+			margin-right: 15rem;
+		}
+	</style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -11,143 +26,142 @@
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <section class="section bg-light" id="features">
 
-        <body>
-            <div class="text-center">
-                <h2 class="mt-5 mb-5">FAQ</h2>
-              </div>
-              <section class="container my-5" id="maincontent">
-                <section id="accordion">
-                  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        How does Valuete compare to  other crypto-backed lending platforms?                      </h2>
-                      <div class="position-absolute top-0 right-0  d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-17" style="">
-                    <div class="card card-body border-0 p-0">
-                      <p>
-                        At Valuete our core focus is on security and investor protection, we use advanced multi-sig technology to ensure that the collateral ‘Bitcoin’ is kept incredibly safe. While at the same time, we only work with loans denominated in US dollars that are secured by legal contracts which ensure investor protection.
-  
-                      </p>
-            
-                    </div>
-                  </div>
-            
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        What does Peer-to-peer Marketplace mean?
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-18" style="">
-                    <div class="card card-body border-0 p-0">
-                      <p>On the Valuete marketplace, the borrowing takes place directly between a lender of interest and borrower of interest with Valuete simply acting as an intermediary.  Valuete is not involved in loan organization or setting the terms of the loan, but offers tools to facilitate this process between borrowers and lenders.</p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-            
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        How does Valuete offer better security?
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-19" style="">
-                    <div class="card card-body border-0 p-0">
-                      <p>The Valuete model relies on using 2-of-3 multi-signature wallets for storing Bitcoin which is used as collateral for securing the loan originated between borrower and lender. </p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-            
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        What is a Multi-Sig wallet ?
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-20">
-                    <div class="card card-body border-0 p-0">
-                      <p>A Multi-Signature, or Multi-Sig, bitcoin wallet has three associated private keys instead of just one. With this configuration, at least 2-of-3 private keys are needed to perform a transaction. </p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-            
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        How are Multi-Sig wallets better than the centralized wallets used by others platforms?
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-21">
-                    <div class="card card-body border-0 p-0">
-                      <p>Using a Multi-Sig wallet provides a level of security and legal clarity currently not offered by any other bitcoin lending platform. Valuete is not in the business of managing your private keys and creating the risks customers experience using centralized platforms. As the saying goes, “not your keys, not your crypto.”</p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-            
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        How much fee does Valuete charge?
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-22">
-                    <div class="card card-body border-0 p-0">
-                      <p>We just charge 0.5% of the loan amount from borrowers only lenders don't have to pay any fees for using our platform.  Our fees are much lesser compared to other platforms as we don’t have huge overhead costs of the centralized crypto lending platform which we pass on as benefit in form of lower lending costs.</p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-                  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
-                    <div class="position-relative">
-                      <h2 class="h4 m-0 pr-3">
-                        Why are you a Bitcoin-only platform? 
-                      </h2>
-                      <div class="position-absolute top-0 right-0   d-flex align-items-center">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="collapse" id="faq-22">
-                    <div class="card card-body border-0 p-0">
-                      <p>Valuete is focused on offering a high level of security and legal clarity for all the products and services we offer; we believe only Bitcoin meets the high bar we have set.
+	<div class="text-center">
+		<h2 class="mt-5 mb-5">FAQ</h2>
+	  </div>
+	  <section class="container my-5" id="maincontent">
+		<section id="accordion">
+		  <a class="py-3 d-block w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				How does Valuete compare to  other crypto-backed lending platforms?                      </h2>
+			  <div class="position-absolute top-0 right-0  d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-17" style="">
+			<div class="card card-body border-0 p-0">
+			  <p>
+				At Valuete our core focus is on security and investor protection, we use advanced multi-sig technology to ensure that the collateral ‘Bitcoin’ is kept incredibly safe. While at the same time, we only work with loans denominated in US dollars that are secured by legal contracts which ensure investor protection.
 
-                        By being a Bitcoin-only platform, we can focus our energies on offering a high-quality product to our customers instead of fighting legal battles with SEC and other agencies. Not to mention, over the long term, we believe 70% of alt-coins will no longer exist.</p>
-                      <p>
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </section>
-        </body>
-    </head>
-</html>
+			  </p>
+	
+			</div>
+		  </div>
+	
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				What does Peer-to-peer Marketplace mean?
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-18" style="">
+			<div class="card card-body border-0 p-0">
+			  <p>On the Valuete marketplace, the borrowing takes place directly between a lender of interest and borrower of interest with Valuete simply acting as an intermediary.  Valuete is not involved in loan organization or setting the terms of the loan, but offers tools to facilitate this process between borrowers and lenders.</p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+	
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				How does Valuete offer better security?
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-19" style="">
+			<div class="card card-body border-0 p-0">
+			  <p>The Valuete model relies on using 2-of-3 multi-signature wallets for storing Bitcoin which is used as collateral for securing the loan originated between borrower and lender. </p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+	
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				What is a Multi-Sig wallet ?
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-20">
+			<div class="card card-body border-0 p-0">
+			  <p>A Multi-Signature, or Multi-Sig, bitcoin wallet has three associated private keys instead of just one. With this configuration, at least 2-of-3 private keys are needed to perform a transaction. </p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+	
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				How are Multi-Sig wallets better than the centralized wallets used by others platforms?
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-21">
+			<div class="card card-body border-0 p-0">
+			  <p>Using a Multi-Sig wallet provides a level of security and legal clarity currently not offered by any other bitcoin lending platform. Valuete is not in the business of managing your private keys and creating the risks customers experience using centralized platforms. As the saying goes, “not your keys, not your crypto.”</p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+	
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				How much fee does Valuete charge?
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-22">
+			<div class="card card-body border-0 p-0">
+			  <p>We just charge 0.5% of the loan amount from borrowers only lenders don't have to pay any fees for using our platform.  Our fees are much lesser compared to other platforms as we don’t have huge overhead costs of the centralized crypto lending platform which we pass on as benefit in form of lower lending costs.</p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+		  <a class="py-3 d-block   w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+			<div class="position-relative">
+			  <h2 class="h4 m-0 pr-3">
+				Why are you a Bitcoin-only platform? 
+			  </h2>
+			  <div class="position-absolute top-0 right-0   d-flex align-items-center">
+				<i class="fa fa-plus"></i>
+			  </div>
+			</div>
+		  </a>
+		  <div class="collapse" id="faq-22">
+			<div class="card card-body border-0 p-0">
+			  <p>Valuete is focused on offering a high level of security and legal clarity for all the products and services we offer; we believe only Bitcoin meets the high bar we have set.
 
+				By being a Bitcoin-only platform, we can focus our energies on offering a high-quality product to our customers instead of fighting legal battles with SEC and other agencies. Not to mention, over the long term, we believe 70% of alt-coins will no longer exist.</p>
+			  <p>
+			  </p>
+			</div>
+		  </div>
+		</section>
+	  </section>
+	  </section>
+
+<%- include("./includes/footer.html") %>
